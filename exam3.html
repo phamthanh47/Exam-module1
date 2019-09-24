@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function printFibonaci(n){
+        let arr=new Array();
+        for(let i=0;;i++) {
+            arr[0]=1;
+            arr[1]=1;
+            arr[i+2] = arr[i] + arr[i+1];
+            if(arr[i]<n) {
+                document.write(arr[i]+" ");
+            }
+            else return;
+        }
+    }
+    let n=10;
+    printFibonaci(n);
+</script>
+</body>
+</html>

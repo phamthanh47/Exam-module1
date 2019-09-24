@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function findMaxScore(arr) {
+        max=arr[0];
+        for(let i=1;i<arr.length;i++){
+            if(max<arr[i]){
+                max=arr[i];
+            }
+        }
+        return max;
+    }
+    let arr=[2,4,3,6,7,8,43,27,-24,89];
+    document.write(findMaxScore(arr));
+</script>
+</body>
+</html>
